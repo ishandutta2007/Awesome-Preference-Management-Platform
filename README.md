@@ -20,35 +20,19 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 - [Disclaimer](#disclaimer)
 
 ## SaaS/Hosted Platforms
-- **[OneTrust PreferenceChoice / Consent & Preferences](https://www.onetrust.com/)**  
-  Enterprise consent and preference management platform supporting websites, apps, and cross-channel preference centers within the broader OneTrust privacy suite.
 
-- **[Didomi](https://www.didomi.io/)**  
-  Consent and preference management platform with strong developer focus, multi-channel support, and compliance features.
-
-- **[Usercentrics](https://usercentrics.com/)**  
-  Consent management and preference platform focused on privacy compliance, user experience, and marketing optimization.
-
-- **[TrustArc](https://trustarc.com/)**  
-  Privacy and compliance platform offering consent and preference management capabilities for enterprises.
-
-- **[Transcend](https://transcend.io/)**  
-  Data privacy infrastructure platform with consent management, preference centers, and automated data rights enforcement.
-
-- **[Osano](https://www.osano.com/)**  
-  Consent and privacy platform designed for simplified compliance and preference management workflows.
-
-- **[Sourcepoint](https://www.sourcepoint.com/)**  
-  Consent management platform particularly strong for publishers and advertising-related consent use cases.
-
-- **[Consentmo](https://www.consentmo.com/)**  
-  Consent and cookie compliance solution commonly used for e-commerce and website preference management.
-
-- **[Cookie Information](https://cookieinformation.com/)**  
-  Consent management and cookie compliance platform focused on transparency and regulatory requirements.
-
-- **[WireWheel](https://wirewheel.io/)**  
-  Privacy and data governance platform that includes preference and consent management capabilities.
+| Product / Platform | Description | Starting Price | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[OneTrust PreferenceChoice](https://www.onetrust.com/)** | Enterprise consent and preference management platform supporting websites, apps, and cross-channel preference centers within the broader OneTrust privacy suite. | ~$10,000/year (~$833/mo) | 14-day free trial available upon demo request (No permanent free plan) |
+| **[Didomi](https://www.didomi.io/)** | Consent and preference management platform with strong developer focus, multi-channel support, and compliance features. | ~€250/month (~$270/mo) | 14-day free trial available upon sales request (No permanent free plan) |
+| **[Usercentrics](https://usercentrics.com/)** | Consent management and preference platform focused on privacy compliance, user experience, and marketing optimization. | €7/month (~$8/mo) | Free forever (1 domain, 1,000 sessions/mo); 14-day trial for premium features |
+| **[TrustArc](https://trustarc.com/)** | Privacy and compliance platform offering consent and preference management capabilities for enterprises. | ~$8,000/year (~$666/mo) | 14-day evaluated free trial upon demo request (No permanent free plan) |
+| **[Transcend](https://transcend.io/)** | Data privacy infrastructure platform with consent management, preference centers, and automated data rights enforcement. | ~$10,000/year (~$833/mo) | 14-day trial & demo available upon request (No permanent free plan) |
+| **[Osano](https://www.osano.com/)** | Consent and privacy platform designed for simplified compliance and preference management workflows. | $199/month | Free forever (1 domain, 1 user, 5,000 visitors/mo) |
+| **[Sourcepoint](https://www.sourcepoint.com/)** | Consent management platform particularly strong for publishers and advertising-related consent use cases. | $500/month | 14-day free trial on demo request + free privacy scan (No permanent free plan) |
+| **[Consentmo](https://www.consentmo.com/)** | Consent and cookie compliance solution commonly used for e-commerce and website preference management. | $10/month | Free forever (10,000 page views/mo); 7-day trial on paid plans |
+| **[Cookie Information](https://cookieinformation.com/)** | Consent management and cookie compliance platform focused on transparency and regulatory requirements. | €15/month (~$16/mo) | 14-day free trial with full feature access (No permanent free plan) |
+| **[WireWheel](https://wirewheel.io/)** | Privacy and data governance platform that includes preference and consent management capabilities. | ~$15,000/year (~$1,250/mo) | 14-day free trial available upon demo request (No permanent free plan) |
 
 ## Open-Source GitHub Projects
 - **[Klaro](https://github.com/KIProtect/klaro)**  
