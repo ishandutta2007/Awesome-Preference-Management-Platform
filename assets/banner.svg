@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e1035" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.05); }
+    }
+    @keyframes floatShield {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes waveBeam {
+      0% { stroke-dashoffset: 1000; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes rotateGear {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    .pulsing-orb {
+      animation: pulseGlow 4s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .floating-shield {
+      animation: floatShield 5s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .accent-text {
+      fill: url(#accent-grad);
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Background Decorative Orbs -->
+  <circle cx="150" cy="80" r="180" fill="#7c3aed" opacity="0.15" class="pulsing-orb" />
+  <circle cx="1050" cy="280" r="220" fill="#0284c7" opacity="0.12" class="pulsing-orb" style="animation-delay: 2s;" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,60 L 1200,60 M 0,120 L 1200,120 M 0,180 L 1200,180 M 0,240 L 1200,240 M 0,300 L 1200,300" />
+    <path d="M 150,0 L 150,360 M 300,0 L 300,360 M 450,0 L 450,360 M 600,0 L 600,360 M 750,0 L 750,360 M 900,0 L 900,360 M 1050,0 L 1050,360" />
+  </g>
+
+  <!-- Main Shield Graphic (Floating) -->
+  <g class="floating-shield" transform="translate(100, 180)" filter="url(#soft-shadow)">
+    <!-- Outer Shield -->
+    <path d="M 0,-70 C 40,-70 70,-90 70,-90 C 70,10 40,65 0,85 C -40,65 -70,10 -70,-90 C -70,-90 -40,-70 0,-70 Z" 
+          fill="#1e1b4b" stroke="url(#accent-grad)" stroke-width="4" />
+    <!-- Inner Checkmark -->
+    <path d="M -25,-5 L -5,15 L 30,-25" fill="none" stroke="#10b981" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+    <!-- Small Privacy Lock Icon -->
+    <circle cx="0" cy="45" r="8" fill="#38bdf8" />
+  </g>
+
+  <!-- Title & Text Content -->
+  <g transform="translate(230, 0)">
+    <!-- Top Category Pill -->
+    <g transform="translate(0, 55)">
+      <rect width="320" height="32" rx="16" fill="#2e1065" stroke="#7c3aed" stroke-width="1.5" />
+      <text x="160" y="21" fill="#c4b5fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle" letter-spacing="1">
+        🔒 PRIVACY &amp; CONSENT ECOSYSTEM
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="#ffffff" filter="url(#soft-shadow)">
+      Awesome <tspan class="accent-text">Preference Management</tspan>
+    </text>
+    <text x="0" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="700" fill="#f3f4f6">
+      Platform List
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="400" fill="#9ca3af">
+      Curated directory of SaaS &amp; Open-Source Consent Banners, Preference Centers &amp; Privacy Signals
+    </text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 275)">
+      <!-- Badge 1 -->
+      <rect x="0" y="0" width="130" height="30" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="65" y="19" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">🛡️ GDPR / CCPA</text>
+
+      <!-- Badge 2 -->
+      <rect x="142" y="0" width="140" height="30" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="212" y="19" fill="#a7f3d0" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ Open-Source</text>
+
+      <!-- Badge 3 -->
+      <rect x="294" y="0" width="120" height="30" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="354" y="19" fill="#fef08a" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">🚀 SaaS Matrix</text>
+
+      <!-- Badge 4 -->
+      <rect x="426" y="0" width="130" height="30" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="491" y="19" fill="#f472b6" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">✨ Updated 2026</text>
+    </g>
+  </g>
+
+  <!-- Right Decorative Preference Sliders UI Graphic -->
+  <g transform="translate(1010, 110)" filter="url(#soft-shadow)">
+    <!-- Container -->
+    <rect x="0" y="0" width="140" height="150" rx="14" fill="#1e1b4b" stroke="#4338ca" stroke-width="2" opacity="0.9" />
+    
+    <!-- Header -->
+    <text x="70" y="25" fill="#a5b4fc" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle">Preferences</text>
+    
+    <!-- Toggle 1 -->
+    <text x="15" y="52" fill="#e0e7ff" font-family="sans-serif" font-size="10">Analytics</text>
+    <rect x="85" y="42" width="40" height="16" rx="8" fill="#10b981" />
+    <circle cx="117" cy="50" r="6" fill="#ffffff" />
+
+    <!-- Toggle 2 -->
+    <text x="15" y="82" fill="#e0e7ff" font-family="sans-serif" font-size="10">Marketing</text>
+    <rect x="85" y="72" width="40" height="16" rx="8" fill="#6366f1" />
+    <circle cx="117" cy="80" r="6" fill="#ffffff" />
+
+    <!-- Toggle 3 -->
+    <text x="15" y="112" fill="#e0e7ff" font-family="sans-serif" font-size="10">Essential</text>
+    <rect x="85" y="102" width="40" height="16" rx="8" fill="#0ea5e9" />
+    <circle cx="117" cy="110" r="6" fill="#ffffff" />
+  </g>
+</svg>
